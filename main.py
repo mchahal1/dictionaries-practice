@@ -1,30 +1,42 @@
-# Create pizza dictionary containing a list
-# pizza = {
-# 	'crust':'thick',
-# 	'toppings':['mushrooms', 'extra cheese'],
-# 	}
 
-# # Summarize the order
-# print(f"You ordered a {pizza['crust']}-crust pizza "
-# 	"with the following toppings:") # You may continue a string like this
+# grades = {
+#     "alice":85,
+#     "Bob":78,
+#     "Charlie":92
+# }
 
-# # Loop through the list with KEY 'toppings'
-# for topping in pizza['toppings']:
-# 	print("\t" + topping) # \t is a tab or indent
+# #add new student
+# grades["david"] = 88
+# del grades["Charlie"]
+# print("initial grades: ", grades)
 
+# for name, grade in grades.items():
+#     print(f"Name: {name}\tGrade: {grade}")
+  
+# pets = {
+#     "Jake":"Golden Retriver",
+#     "Sam":"Desert cat",
+#     "bob":"brown mouse",
+# }
 
-pets = {'house':['4 doors', 'one door']}
+# for name, breed in pets.items():
+#     print(f"{name} owns a {breed}")
+  
+# people = {
+#      "Jake":["Jiggy","604-811-3862"],
+#     "Sam":["Desert cat","724-388-9080"],
+#     "bob":["brown mouse","188-988-2300"],
+# }
 
-for x in pets
-    print(pets['house'])
+# for firstname, lastname in people.items():
+#     print(f"Firstname: {firstname}\t Lastname: {lastname[0]}\t Number: {lastname[1]}")
 
+cities = {
+    "Vancouver":["Canada","700,000","First known as Gastown"],
+    "Sydney":["Australia","5.2 Million","One in eight people are over 65 years old in Sydney."],
+    "Moscow":["Russia","13.1 Million", "Largest amount of libraries in the world"]
+}
 
-# favourite_languages = {
-# 	'jen':'python',
-# 	'sarah':'c',
-# 	'edward':'ruby',
-# 	'phil':'python',  # Add a comma on the last one as well
-# 	}  # This brace is indented along with the keys
+for city, info in cities.items():
+    print(f"City: {city}\nCountry: {info[0]}\nPopulation: {info[1]}\nFact: {info[2]}\n")
 
-# for language in favourite_languages.values():
-# 	print(language.title())
